@@ -20,25 +20,48 @@
             h1 {
                 font-size:35px;
                 text-align:center;
+                border-bottom:1px solid black;
+                padding:20px;
+                margin:0;
             }
-            p {
+            .writer {
                 text-align: right;
+                margin:0;
+                border-bottom:1px solid black;
             }
-            .saw {
-                color:gray;
+            #grid ol {
+                border-right:1px solid black;
+                width:80px;
+                margin:0;
+                padding:20px;
+                padding-left:30px;
+                font-weight: bold;
             }
-            #active {
-                color:red;
+            body {
+                margin:0;
+            }
+            #grid {
+                display:grid;
+                grid-template-columns: 150px 1fr;
+            }
+            #article {
+                padding:25px;
             }
         </style>
     </head>
     <body>
         <h1><a href="index.html">jamie homepage</a></h1>
-        <p style="color:green;">written by jamie</p>
-        <br>
-        <ol>
-            <li><a href="study.html" class="saw" id="active">study</a></li>
+        <p class="writer" style="color:green;">written by jamie</p>
+        <div id="grid">
+            <ol>
+            <li><a href="study.html">study</a></li>
             <li><a href="contact.html">contact</a></li>
-        </ol>
+            <li><a href="box.html">box 연습</a></li>
+            <li><a href="grid.html">grid 연습</a></li>
+            </ol>
+            <div id="article">
+            <p>jamie의 홈페이지 리스트입니다.</p>
+            </div>
+        </div>
     </body>
 </html>
